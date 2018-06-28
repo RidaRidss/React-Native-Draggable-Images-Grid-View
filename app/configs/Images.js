@@ -12,6 +12,9 @@ const car9 = require("../assets/car1.png");
 const car10 = require("../assets/car1.png");
 const car11 = require("../assets/car1.png");
 const car12 = require("../assets/car1.png");
+const cam = require("../assets/cam.png");
+const gallery = require("../assets/gallery.png");
+
 
 
 
@@ -32,6 +35,8 @@ export default {
   car10,
   car11,
   car12,
+  cam,
+  gallery
   
 };
 
