@@ -8,7 +8,6 @@ const screenHeight = width < height ? height : width;
 const guidelineBaseWidth = 375;
 const guidelineBaseHeight = 667;
 
-const scale = size => (screenWidth / guidelineBaseWidth) * +size;
 const scaleVertical = size => (screenHeight / guidelineBaseHeight) * size;
 
 const ratio = (iosSize: number, androidSize: ?number) =>
@@ -23,6 +22,7 @@ const generatedFontSize = (iosFontSize: number, androidFontSize: ?number) =>
     android: androidFontSize || iosFontSize
   });
 
+const scale = size => (screenWidth / guidelineBaseWidth) * +size;
 const NAVBAR_HEIGHT = Platform.OS === "ios" ? 44 : 56;
 const STATUSBAR_HEIGHT = Platform.OS === "ios" ? 20 : 0;
 
